@@ -17,17 +17,13 @@ const Settings: React.FC = () => {
             <FaUserCircle size={28} />
             <h3 className="text-3xl font-light">Account</h3>
           </div>
-          <ul className="space-y-4 text-lg font-extralight">
-            <li
-              onClick={(e) => {
-                e.stopPropagation();
-                navigate("/profile/edit");
-              }}
-              // onClick={(e) => { e.stopPropagation(); showAlert(); }}
-              className="select-none"
-            >
-              Edit details
-            </li>
+          <ul
+            className="space-y-4 text-lg font-extralight"
+            onClick={(e) => {
+              showAlert();
+            }}
+          >
+            <li className="select-none">Edit details</li>
             <li>Logout</li>
             <li>Delete</li>
           </ul>
@@ -55,6 +51,9 @@ const Settings: React.FC = () => {
         <div
           className="text-right text-black mt-3"
           style={{ textShadow: "0 1px 2px rgba(0,0,0,0.25)" }}
+          onClick={() => {
+            navigate("/profile/edit");
+          }}
         >
           Version: 2.7.8 (1)
         </div>
