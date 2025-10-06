@@ -14,7 +14,7 @@ const tabs = [
 const BottomNav: React.FC = () => {
   const loc = useLocation();
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white z-30 shadow-inner">
+    <nav className="fixed bottom-0 left-0 right-0 bg-[#2E2E2E] text-white z-30 shadow-inner">
       <div className="max-w-3xl mx-auto px-2 pt-1 pb-7 flex justify-between">
         {tabs.map((t) => {
           const active = loc.pathname === t.to;
