@@ -36,7 +36,7 @@ const TopBar: React.FC<Props> = ({ title = "Home" }) => {
         <img
           src={logo}
           alt="My Metro logo"
-          className="w-20 h-10 object-contain"
+          className="w-20 h-10 object-contain mr-2"
         />
       </div>
     </header>
