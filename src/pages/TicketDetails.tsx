@@ -40,10 +40,10 @@ const CounterBlock: React.FC<{ value: string; label: string }> = ({
 
 const TicketDetails: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    days: 23,
+    hours: 5,
+    minutes: 22,
+    seconds: 46,
   });
   const { showAlert } = useAlert();
 
