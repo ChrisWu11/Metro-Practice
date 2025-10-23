@@ -8,14 +8,14 @@ const readStoredProfile = () => {
   try {
     const raw = localStorage.getItem(PROFILE_STORAGE_KEY);
     if (!raw)
-      return { name: "Chris Wu", avatar: "https://picsum.photos/64/64" };
+      return { name: "Eric", avatar: "https://picsum.photos/64/64" };
     const parsed = JSON.parse(raw);
     return {
-      name: parsed.name || "Chris Wu",
+      name: parsed.name || "Eric",
       avatar: parsed.avatar || "https://picsum.photos/64/64",
     };
   } catch {
-    return { name: "Chris Wu", avatar: "https://picsum.photos/64/64" };
+    return { name: "Eric", avatar: "https://picsum.photos/64/64" };
   }
 };
 
